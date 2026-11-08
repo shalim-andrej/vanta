@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VANTA — техника будущего</title>
+<meta name="description" content="Официальный магазин электроники: гарантия 2 года, доставка день-в-день, trade-in, рассрочка 0-0-12.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230c0c0e'/%3E%3Ctext x='32' y='43' font-size='34' text-anchor='middle' fill='%23c8a15a' font-family='Georgia'%3EV%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body data-page="home">
+<div class="tstrip"><div class="tstrip-in"><span>Бесплатная доставка день-в-день при заказе от 7 000 ₽</span><span>Промокод TECH10 — скидка 10%</span><span>Возврат 14 дней по закону</span><span>Технологии без компромиссов</span><span>Бесплатная доставка день-в-день при заказе от 7 000 ₽</span><span>Промокод TECH10 — скидка 10%</span><span>Возврат 14 дней по закону</span><span>Технологии без компромиссов</span></div></div>
+<header class="hdr"><div class="container hdr-inner">
+  <a class="logo" href="index.html">VANTA<i>.</i></a>
+  <nav class="nav"><a href="index.html" class="active">Главная</a><a href="catalog.html" class="">Каталог</a><a href="about.html" class="">О бренде</a><a href="delivery.html" class="">Доставка</a><a href="returns.html" class="">Возврат</a><a href="faq.html" class="">FAQ</a><a href="contacts.html" class="">Контакты</a></nav>
+  <div class="hdr-actions">
+    <button id="search-btn" class="icon-btn" title="Поиск"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+    <a href="compare.html" class="icon-btn hide-m" title="Сравнение"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 21V5l6-2v18M9 21H3l6-8m6 8h6l-6-8"/></svg><span id="cmp-count" class="badge-dot">0</span></a>
+    <a href="favorites.html" class="icon-btn hide-m" title="Избранное"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7.5-4.7-10-9.2C.4 8.2 2.3 4.5 6 4.5c2.2 0 3.7 1.2 4.6 2.7L12 9l1.4-1.8c.9-1.5 2.4-2.7 4.6-2.7 3.7 0 5.6 3.7 4 7.3C19.5 16.3 12 21 12 21z"/></svg><span id="fav-count" class="badge-dot">0</span></a>
+    <a href="cart.html" class="icon-btn" title="Корзина"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 7h12l1.2 13.2a1.8 1.8 0 0 1-1.8 1.8H6.6a1.8 1.8 0 0 1-1.8-1.8L6 7z"/><path d="M9 10V6a3 3 0 0 1 6 0v4"/></svg><span id="cart-count" class="badge-dot">0</span></a>
+    <button class="burger" id="burger-btn" title="Меню"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h10"/></svg></button>
+  </div>
+</div></header>
+<div id="mnav" class="mnav">
+  <div class="mnav-head"><span class="logo">VANTA<i>.</i></span><button id="mnav-close" class="icon-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 5l14 14M19 5 5 19"/></svg></button></div>
+  <nav><a class="big" href="index.html">Главная</a><a class="big" href="catalog.html">Каталог</a><a class="big" href="about.html">О бренде</a><a class="big" href="delivery.html">Доставка</a><a class="big" href="returns.html">Возврат</a><a class="big" href="faq.html">FAQ</a><a class="big" href="contacts.html">Контакты</a></nav>
+  <div class="mnav-sub">
+    <a href="favorites.html">Избранное</a><a href="cart.html">Корзина</a>
+    <a href='compare.html'>Сравнение</a>
+    <a href="offer.html">Публичная оферта</a><a href="privacy.html">Политика конфиденциальности</a>
+    <a href="contacts.html">Контакты и реквизиты</a>
+  </div>
+</div>
+<div id="search-ov" class="search-ov"><div class="search-box">
+  <div class="search-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="search-in" placeholder="Поиск по каталогу…" autocomplete="off"><button id="search-close" class="icon-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 5l14 14M19 5 5 19"/></svg></button></div>
+  <div id="search-res"></div>
+</div></div>
+<main>
+
+<section class="hero hero--grid"><div class="container hero-inner"><div class="hero-grid">
+  <div>
+    <span class="eyebrow">Официальный магазин · гарантия 2 года</span>
+    <h1>Техника без <span class="grad">компромиссов</span></h1>
+    <p class="hero-sub">Ноутбуки Nexbook, смартфоны Nxphone, аудио Vantadb — с доставкой день-в-день, trade-in и сервисом за 48 часов.</p>
+    <div class="hero-cta"><a class="btn btn-p btn-lg" href="catalog.html">В каталог <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a><a class="btn btn-ghost btn-lg" href="#sale">Акции</a></div>
+    <div class="hero-stats"><div><b>48 ч</b><span>ремонт в сервисе</span></div><div><b>40%</b><span>скидка по trade-in</span></div><div><b>2 года</b><span>официальной гарантии</span></div></div>
+  </div>
+  <div>
+    <div class="hi-card reveal d1">
+      <img src="assets/img/van-p-laptop-1.jpg" alt="">
+      <div>
+        <span class="hi-badge">Товар недели</span>
+        <div class="hi-name">Ноутбук Nexbook Pro 14</div>
+        <div class="hi-price"><b>139 900 ₽</b><s>159 900 ₽</s></div>
+        <a class="btn btn-p" href="product.html?id=n1">Подробнее <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</div></div></section>
+<section class="sec" style="padding-top:50px"><div class="container">
+  <div class="sec-head reveal"><div><span class="sec-eyebrow">Categories</span><h2>Категории</h2><p class="sub">Шесть направлений техники — от ноутбуков до дронов.</p></div></div>
+  <div class="cat-tiles"><a class="cat-tile" href="catalog.html?cat=laptops"><img src="assets/img/van-p-laptop-1.jpg" alt="" loading="lazy"><span>Ноутбуки</span><b>Перейти</b></a><a class="cat-tile" href="catalog.html?cat=phones"><img src="assets/img/van-p-phone-1.jpg" alt="" loading="lazy"><span>Смартфоны</span><b>Перейти</b></a><a class="cat-tile" href="catalog.html?cat=audio"><img src="assets/img/van-p-audio-1.jpg" alt="" loading="lazy"><span>Аудио</span><b>Перейти</b></a><a class="cat-tile" href="catalog.html?cat=watches"><img src="assets/img/van-p-watch-1.jpg" alt="" loading="lazy"><span>Часы</span><b>Перейти</b></a><a class="cat-tile" href="catalog.html?cat=drones"><img src="assets/img/van-p-drone-1.jpg" alt="" loading="lazy"><span>Квадрокоптеры</span><b>Перейти</b></a><a class="cat-tile" href="catalog.html?cat=cons"><img src="assets/img/van-p-cons-1.jpg" alt="" loading="lazy"><span>Гейминг</span><b>Перейти</b></a></div>
+</div></section>
+<section class="sec" style="padding-top:0" id="sale"><div class="container">
+  <div class="promo-banner reveal">
+    <div><h3>Неделя VANTA: −10% по промокоду TECH10</h3><p>Плюс удвоенный кэшбек баллами на всё аудио Vantadb. До конца акции:</p>
+    <div class="countdown" id="countdown" style="margin-top:18px"><div class="cd-cell"><b id="cd-d">01</b><span>дн</span></div><div class="cd-cell"><b id="cd-h">02</b><span>час</span></div><div class="cd-cell"><b id="cd-m">00</b><span>мин</span></div><div class="cd-cell"><b id="cd-s">00</b><span>сек</span></div></div></div>
+    <a class="btn btn-p btn-lg" href="catalog.html">Забрать скидку</a>
+  </div>
+</div></section>
+<section class="sec tint"><div class="container">
+  <div class="sec-head reveal"><div><span class="sec-eyebrow">Bestsellers</span><h2>Хиты продаж</h2><p class="sub">Что заказывают чаще всего в 2026 году.</p></div><a class="link-arr" href="catalog.html">Смотреть все <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a></div>
+  <div class="pgrid" style="--gcols:4"><article class="pcard"><div class="pcard-media"><div class="pcard-badges"></div><a class="pcard-link" href="product.html?id=n1"><img src="assets/img/van-p-laptop-1.jpg" alt="" loading="lazy"></a></div><div class="pcard-info"><div class="pcard-cat">laptops</div><a class="pcard-link" href="product.html?id=n1"><div class="pcard-name">Ноутбук Nexbook Pro 14</div></a><div class="pcard-meta"><div class="price">139 900 ₽</div></div></div></article><article class="pcard"><div class="pcard-media"><div class="pcard-badges"></div><a class="pcard-link" href="product.html?id=n4"><img src="assets/img/van-p-phone-1.jpg" alt="" loading="lazy"></a></div><div class="pcard-info"><div class="pcard-cat">phones</div><a class="pcard-link" href="product.html?id=n4"><div class="pcard-name">Смартфон Nxphone 12, 128 ГБ</div></a><div class="pcard-meta"><div class="price">79 900 ₽</div></div></div></article><article class="pcard"><div class="pcard-media"><div class="pcard-badges"></div><a class="pcard-link" href="product.html?id=n7"><img src="assets/img/van-p-audio-1.jpg" alt="" loading="lazy"></a></div><div class="pcard-info"><div class="pcard-cat">audio</div><a class="pcard-link" href="product.html?id=n7"><div class="pcard-name">Наушники Vantadb H9 ANC</div></a><div class="pcard-meta"><div class="price">34 900 ₽</div></div></div></article><article class="pcard"><div class="pcard-media"><div class="pcard-badges"></div><a class="pcard-link" href="product.html?id=n11"><img src="assets/img/van-p-earbuds-1.jpg" alt="" loading="lazy"></a></div><div class="pcard-info"><div class="pcard-cat">audio</div><a class="pcard-link" href="product.html?id=n11"><div class="pcard-name">TWS Vantadb Pods 3</div></a><div class="pcard-meta"><div class="price">14 900 ₽</div></div></div></article><article class="pcard"><div class="pcard-media"><div class="pcard-badges"></div><a class="pcard-link" href="product.html?id=n13"><img src="assets/img/van-p-watch-1.jpg" alt="" loading="lazy"></a></div><div class="pcard-info"><div class="pcard-cat">watches</div><a class="pcard-link" href="product.html?id=n13"><div class="pcard-name">Смарт-часы Vantadb Watch 5</div></a><div class="pcard-meta"><div class="price">24 900 ₽</div></div></div></article><article class="pcard"><div class="pcard-media"><div class="pcard-badges"></div><a class="pcard-link" href="product.html?id=n16"><img src="assets/img/van-p-drone-1.jpg" alt="" loading="lazy"></a></div><div class="pcard-info"><div class="pcard-cat">drones</div><a class="pcard-link" href="product.html?id=n16"><div class="pcard-name">Квадрокоптер AviaX Mini 4K</div></a><div class="pcard-meta"><div class="price">74 900 ₽</div></div></div></article><article class="pcard"><div class="pcard-media"><div class="pcard-badges"></div><a class="pcard-link" href="product.html?id=n18"><img src="assets/img/van-p-acc-1.jpg" alt="" loading="lazy"></a></div><div class="pcard-info"><div class="pcard-cat">acc</div><a class="pcard-link" href="product.html?id=n18"><div class="pcard-name">Клавиатура Vantadb K87 RGB</div></a><div class="pcard-meta"><div class="price">11 900 ₽</div></div></div></article><article class="pcard"><div class="pcard-media"><div class="pcard-badges"></div><a class="pcard-link" href="product.html?id=n21"><img src="assets/img/van-p-cons-1.jpg" alt="" loading="lazy"></a></div><div class="pcard-info"><div class="pcard-cat">cons</div><a class="pcard-link" href="product.html?id=n21"><div class="pcard-name">Консоль Vantadb Play Core</div></a><div class="pcard-meta"><div class="price">59 900 ₽</div></div></div></article></div>
+</div></section>
+<section class="sec"><div class="container">
+  <div class="sec-head reveal"><div><span class="sec-eyebrow">Worlds</span><h2>Выберите свой сценарий</h2><p class="sub">Техника под конкретные задачи — а не «просто ноутбук».</p></div></div>
+  <div class="cat-tiles" style="grid-template-columns:1fr 1fr">
+    <a class="cat-tile" style="aspect-ratio:16/8" href="catalog.html?cat=cons"><img src="assets/img/van-game-1.jpg" alt=""><span>Гейминг</span><b>Собери сетап мечты</b></a>
+    <a class="cat-tile" style="aspect-ratio:16/8" href="catalog.html?cat=watches"><img src="assets/img/van-smart-1.jpg" alt=""><span>Умный дом</span><b>Техника, которая слушается</b></a>
+  </div>
+  <div style="margin-top:44px" class="brand-strip reveal"><span>NEXBOOK</span><span>NXPHONE</span><span>VANTADB</span><span>AVIAX</span><span>NXCORE</span><span>VANTADB PLAY</span></div>
+</div></section>
+<section class="sec tint"><div class="container"><div class="benefits reveal"><div class="benefit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M1.5 6h13v11h-13zM14.5 10h4l3 3.5V17h-7z"/><circle cx="6" cy="19" r="1.8"/><circle cx="17.5" cy="19" r="1.8"/></svg><div><b>Быстрая доставка</b><span>Курьер день-в-день — от сегодня</span></div></div><div class="benefit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 12a8 8 0 1 1-2.3-5.6M20 3v5h-5"/></svg><div><b>Возврат 14 дней</b><span>Без вопросов, по закону о защите прав потребителей</span></div></div><div class="benefit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2.8 20 6v6c0 5-3.4 8-8 9.2C7.4 20 4 17 4 12V6z"/><path d="m9 12 2.2 2.2L15.5 10"/></svg><div><b>Гарантия и чек</b><span>Каждый заказ с чеком и гарантией</span></div></div><div class="benefit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 10h19"/></svg><div><b>Удобная оплата</b><span>Банковская карта, СБП, Рассрочка 0-0-12</span></div></div></div></div></section>
+</main>
+<footer class="ftr"><div class="container">
+  <div class="ftr-cols">
+    <div class="ftr-brand">
+      <span class="logo">VANTA<i>.</i></span>
+      <p>Фирменный магазин электроники VANTA: официальная гарантия 2 года, доставка день-в-день, сервис в центре Москвы.</p>
+      <div class="ftr-social"><a href="#" title="Telegram" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m21 4-18 8 5.5 2L10 19l3-3.5L18.5 18z"/><path d="M8.5 14 18 6.5"/></svg></a><a href="#" title="YouTube" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2.5" y="6" width="19" height="12" rx="3"/><path d="m10.5 9.5 4.5 2.5-4.5 2.5z"/></svg></a><a href="#" title="Rutube" aria-label="Rutube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M5 5l4 4M15 15l4 4M19 5l-4 4M9 15l-4 4"/></svg></a></div>
+      <form data-toast class="ftr-sub"><input type="email" placeholder="E-mail для писем о новинках"><button class="btn btn-p" type="submit">Подписаться</button></form>
+    </div>
+    <div class="ftr-col"><h5>Каталог</h5><a href="catalog.html?cat=laptops">Ноутбуки</a><a href="catalog.html?cat=phones">Смартфоны</a><a href="catalog.html?cat=audio">Наушники и аудио</a><a href="catalog.html?cat=watches">Часы и браслеты</a><a href="catalog.html?cat=drones">Квадрокоптеры</a><a href="catalog.html?cat=acc">Аксессуары</a><a href="catalog.html?cat=cons">Гейминг</a></div>
+    <div class="ftr-col"><h5>Покупателям</h5><a href="delivery.html">Доставка и оплата</a><a href="returns.html">Возврат и обмен</a><a href="faq.html">Частые вопросы</a><a href="about.html">О бренде</a><a href="contacts.html">Контакты</a></div>
+    <div class="ftr-col"><h5>Документы</h5><a href="offer.html">Публичная оферта</a><a href="privacy.html">Политика конфиденциальности</a><a href="consent.html">Согласие на обработку ПД</a><a href="contacts.html">Реквизиты</a></div>
+  </div>
+  <div class="ftr-bottom">
+    <span>© 2026 ИП Соколов Артём Дмитриевич · ИНН 772645890132 · 321774600012345</span>
+    <div class="pay-list"><span>Банковская карта</span><span>СБП</span><span>Рассрочка 0-0-12</span><span>Оплата при получении</span></div>
+    <span>Цены на сайте носят демонстрационный характер</span>
+  </div>
+</div></footer>
+<div class="cookie" id="cookie"><p>Мы используем cookies для работы корзины и аналитики. Продолжая пользоваться сайтом, вы соглашаетесь с <a href="privacy.html">политикой обработки данных</a>.</p><div class="cookie-row"><button class="btn btn-p" id="cookie-ok">Хорошо</button><a class="btn btn-ghost" href="privacy.html">Подробнее</a></div></div>
+<div class="toast-stack"></div>
+<button class="totop" aria-label="Наверх"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 19V5m-6 6 6-6 6 6"/></svg></button>
+<div class="modal" id="quick-modal"><div class="mbox"><button class="mclose"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 5l14 14M19 5 5 19"/></svg></button><div class="qv"><div class="qv-img"><img src="" alt=""></div><div class="qv-body"></div></div></div></div>
+<div class="modal" id="sizeguide-modal"><div class="mbox"><button class="mclose"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 5l14 14M19 5 5 19"/></svg></button>
+  <h3 style="font-size:24px;margin-bottom:6px">Таблица размеров</h3>
+  <p style="color:var(--muted);font-size:14px">Измерения в сантиметрах. Если вы между размерами — берите больший.</p>
+  <table class="sizeguide-tbl"><tr><th>Размер</th><th>Грудь</th><th>Талия</th><th>Бёдра</th></tr>
+  <tr><td>XS</td><td>80–84</td><td>62–66</td><td>88–92</td></tr>
+  <tr><td>S</td><td>84–88</td><td>66–70</td><td>92–96</td></tr>
+  <tr><td>M</td><td>88–92</td><td>70–74</td><td>96–100</td></tr>
+  <tr><td>L</td><td>92–96</td><td>74–78</td><td>100–104</td></tr>
+  <tr><td>XL</td><td>96–102</td><td>78–84</td><td>104–110</td></tr></table>
+</div></div>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body></html>
